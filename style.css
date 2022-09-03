@@ -1,39 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 nav {
     background-color: #1f2937;
     padding: 1rem 0rem;
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 nav .logo img {
     width: 200px;
-    height: 50px;
-    text-shadow: 5px 5px 10px 5px white;
+    height: 50px;    
 }
 .header-links ul {
     display: flex;
     gap: 4rem;
     list-style-type: none;
 }
-.header-links ul li a {
+
+a:link {
     text-decoration: none;
     color: #f9faf8;
     font-size: 1.5rem;
     font-weight: 400;
-    font-family: roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
+       
+    
+
 }
+a:visited {
+    text-decoration: none;
+    color: #f9faf8;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+a:hover {
+    text-decoration: none;
+    color: #78f001;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    
+}   
+    
+a:active {
+    text-decoration: none;
+    color: #f9faf8;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family:'Roboto', sans-serif;
+}
+
 
 .main {
     background-color: #1f2937;
-    padding: 4rem 10rem;
+    padding: 4rem 9rem;
     display: flex;
-    justify-content: center;
+    justify-content:space-around;
     align-items: center;
-    gap: 3rem;    
+    gap: 3rem;
+       
 }
 .left-text{
     display: flex;
@@ -41,6 +72,7 @@ nav .logo img {
     gap: 1rem;
 }
 h3, p {
+    font-family: 'Roboto', sans-serif;
     color:  #f9faf8;
     
     
@@ -57,7 +89,8 @@ h3, p {
     font-weight: bold;
     font-size: 1.2rem;
     border-radius: 0.5rem;
-    max-width: 8rem;    
+    max-width: 8rem;
+        
 }
 .left-text button:hover {
     background-color: #ffffff;
@@ -68,7 +101,8 @@ h3, p {
     font-size: 1.2rem;
     border-radius: 0.5rem;
     max-width: 8rem; 
-    box-shadow: 0 0 8px #113b7a,0 0 10px 3px #ffffff ;
+    box-shadow: 0 0 8px #113b7a,0 0 10px 3px #ffffff;
+    
 }
 .banner img {
     width: 100%;
@@ -84,6 +118,7 @@ h3, p {
 
 }
 .paan-detail h4 {
+    font-family: 'Roboto', sans-serif;
     font-size: 3rem;
 }
 .paan-cards {
@@ -92,22 +127,27 @@ h3, p {
     align-items: center;
     padding: 1rem 12rem;
     gap: 3rem;
-    
+    flex: 1;
+       
 }
-figure {
+/* figure {
    display: flex;
    flex-direction: column;
+   align-items: center;
    gap: 0.7rem;
-}
+   flex: 1;
+} */
 figure img {
     width: 100%;
     border: 5px solid #3882f6 ;   
     border-radius: 0.8rem;
     
+    
 }
 figcaption {
+    text-align: center;
     color: #2b2c2c;
-    font-family: roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 figure:hover {
     border-radius: 0.8rem 0.8rem 0 0;
@@ -125,7 +165,7 @@ figure:hover {
 blockquote {
     color: #2d2e30;
     font-size: 3rem;
-    font-family: roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 cite {
     font-size: 2.5rem;
@@ -149,7 +189,7 @@ cite {
     gap: 2.5rem;
 }
 .user-signUP .content {
-    font-family: roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
 }
 .callToAction {
