@@ -166,6 +166,7 @@ blockquote {
     color: #2d2e30;
     font-size: 3rem;
     font-family: 'Roboto', sans-serif;
+    text-align: justify;
 }
 cite {
     font-size: 2.5rem;
